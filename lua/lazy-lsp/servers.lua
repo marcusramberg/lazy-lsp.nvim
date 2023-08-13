@@ -29,8 +29,13 @@ return {
   cobol_ls = "",
   codeqlls = "codeql",
   coffeesense = "",
-  crystalline = "",
-  csharp_ls = "",
+  crystalline = {
+    pkgs = {
+      "crystal",
+      "crystalline"
+    }
+  },
+  csharp_ls = "csharp-ls",
   cssls = "nodePackages.vscode-langservers-extracted",
   cssmodules_ls = "",
   cucumber_language_server = "",
@@ -79,7 +84,7 @@ return {
   ghdl_ls = "",
   gleam = "gleam",
   glint = "",
-  glslls = "",
+  glslls = "glslls",
   golangci_lint_ls = "",
   gopls = {
     pkgs = {
@@ -94,7 +99,7 @@ return {
   guile_ls = "",
   haxe_language_server = "",
   hdl_checker = "",
-  helm_ls = "",
+  helm_ls = "helm-ls",
   hhvm = "",
   hie = "",
   hls = "haskell-language-server",
@@ -140,7 +145,7 @@ return {
   nil_ls = "nil",
   nim_langserver = "",
   nimls = "nimlsp",
-  nixd = "",
+  nixd = "nixd",
   nomad_lsp = "",
   ntt = "",
   nxls = "",
@@ -159,10 +164,15 @@ return {
   opencl_ls = "",
   openedge_ls = "",
   openscad_ls = "",
-  openscad_lsp = "",
+  openscad_lsp = "openscad-lsp",
   pact_ls = "",
   pasls = "",
-  perlls = "",
+  perlls = {
+    pkgs = {
+      "perl",
+      "perlPackages.PerlLanguageServer"
+    }
+  },
   perlnavigator = "",
   perlpls = "perl534Packages.PLS",
   pest_ls = "",
@@ -205,7 +215,7 @@ return {
     }
   },
   rubocop = "",
-  ruby_ls = "",
+  ruby_ls = "rubyPackages.ruby-lsp",
   ruff_lsp = "ruff-lsp",
   rust_analyzer = "rust-analyzer",
   salt_ls = "",
