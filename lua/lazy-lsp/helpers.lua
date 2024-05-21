@@ -69,7 +69,7 @@ end
 local function build_filetype_to_servers_index(servers, lspconfig)
   local index = {}
   for server, _ in pairs(servers) do
-    if lspconfig[server] then
+    if lspconfig[server] and lspconfig[server].document_config then
       local filetypes = lspconfig[server].document_config.default_config.filetypes
       if filetypes then
         for _, filetype in ipairs(filetypes) do
